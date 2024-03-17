@@ -1,0 +1,77 @@
+.KAKA {
+  margin-top: 50px;
+  margin-left: 21px;
+}
+
+.gg {
+  width: 600px;
+  height: auto;
+}
+
+.gw {
+  width: 600px;
+  height: auto;
+}
+
+.bulan {
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+
+.tailah {
+  margin-top: 50px;
+}
+
+.gege {
+  background: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ff {
+  margin-right: 10px;
+  color: white;
+}
+
+.white {
+  color: aquamarine;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #333333;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: aqua;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
